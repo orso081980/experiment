@@ -1,0 +1,37 @@
+.btn-primary {
+  font-family: $font-regular;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+  background-color: #282828;
+  border-color: #282828;
+  border-radius: 0;
+  padding: 9px;
+  &:hover {
+    color: #fff;
+    background-color: #696868;
+    border-color: #696868;
+  }
+  &.focus, &:focus {
+    color: #fff;
+    background-color: #282828;
+    border-color: #282828;
+    box-shadow: 0 0 0 0.2rem rgba(200,221,219,.5);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(200,221,215,.25);
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(200,221,215,.25);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #282828;
+    border-color: #282828;
+}

@@ -1,0 +1,130 @@
+.slider {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slick-slide {
+  margin: 0px 5px;
+  transition: all ease-in-out .3s;
+  opacity: .2;
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.slick-n {
+  position: absolute;
+  right: 22%;
+  top: 48%;
+  background-image: url(../../svg-icon/chevron-right-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 17px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.slick-p {
+  position: absolute;
+  left: 22%;
+  top: 48%;
+  background-image: url(../../svg-icon/chevron-left-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 17px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-current {
+  position: relative;
+  opacity: 1;
+}
+
+.variable .slick-slide {
+  width: 300px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}

@@ -1,0 +1,131 @@
+.mobile,
+#menuToggle,
+.mobile-logo {
+	display: none;
+}
+header {
+	.navigation {
+		ul {
+			li {
+				&:nth-child(-n+2) {
+					display: none;
+				}
+			}
+		} 
+	}
+}
+@media screen and (max-width: 767px) {
+	header {
+		position: fixed;
+		background: white;
+		z-index: 100;
+		left: 0;
+		right: 0;
+		top: 0;
+	}
+	.slider {
+		margin-top: 234px;
+	}
+	.mobile,
+	#menuToggle,
+	.mobile-logo {
+		display: block;
+	}
+	.mobile-logo {
+		.logo-banner {
+			margin: 40px auto;
+			a {
+				border: none;
+			}
+		}
+	} 
+	#menuToggle {
+		cursor: pointer;
+		display: block;
+		float: right;
+		text-align: right;
+		position: absolute;
+		top: 25px;
+		right: 5%;
+		z-index: 10;
+		span {
+			display: block;
+			width: 35px;
+			height: 3px;
+			background-color: #333;
+			margin: 6px 0;
+			transition: 0.4s;
+		}
+		&.change span:nth-child(1) {
+			-webkit-transform: rotate(-45deg) translate(-6px, 0);
+			transform: rotate(-45deg) translate(-6px, 0);
+		}
+		&.change span:nth-child(2) {
+			opacity: 0;
+		}
+		&.change span:nth-child(3) {
+			-webkit-transform: rotate(45deg) translate(-11px, -7px);
+			transform: rotate(45deg) translate(-11px, -7px);
+		}
+	}
+	.banner.container {
+		ul {
+			li:nth-child(n+3) {
+				display: none;
+			}
+		}
+	}
+	.mobile-view {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 100%;
+		right: 0;
+		background: white;
+		z-index: 1;
+		transition: left 0.3s ease-in-out;
+		&.menueffect {
+			left: 0;
+		}
+		.logo-banner {
+			.row {
+				.col-md-4:nth-child(odd) {
+					display: none;
+				}
+			}
+		}
+		.navigation {
+			ul {
+				padding: 40px 0 50px;
+				li {
+					&:nth-child(1) {
+						margin-left: 10px;
+					}
+					display: block;
+				}
+			}
+		}
+	}
+	header {
+		.navigation {
+			ul {
+				li {
+					&:nth-child(-n+2) {
+						display: block;
+					}
+				}
+			} 
+		}
+	}
+}
+@media screen and (max-width: 863px) {
+	header .navigation form {
+		width: 100%
+	}
+	header .logo-banner .col-md-4:nth-child(1) a {
+		padding: 15px 30px;
+	}
+	header .logo-banner .col-md-4 a {
+		padding: 15px 10px;
+	}
+}
