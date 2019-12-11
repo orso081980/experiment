@@ -1,4 +1,4 @@
-# Mtc project for a landing page
+# Project for a landing page
 
 
 Viewports: 1440px, 767px and 968px.
