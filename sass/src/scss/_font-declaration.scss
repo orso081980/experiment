@@ -9,8 +9,8 @@
 
 @font-face {
 	font-family: 'Karla-bold';
-	src: url('../../Karla-bold.woff')  format('truetype');
-	src: url('../../fonts/Karla-bold.woff2') format('woff2'), url('../../fonts/Karla-bold.woff') format('woff');
+	src: url('../../fonts/Karla-bold.woff')  format('truetype');
+	src: url('../../fonts/fonts/Karla-bold.woff2') format('woff2'), url('../../fonts/Karla-bold.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
 	font-display: auto; 
@@ -18,7 +18,7 @@
 
 @font-face {
 	font-family: 'Karla-Bolditalic';
-	src: url('../../Karla-Bolditalic.woff')  format('truetype');
+	src: url('../../fonts/Karla-Bolditalic.woff')  format('truetype');
 	src: url('../../fonts/Karla-Bolditalic.woff2') format('woff2'), url('../../fonts/Karla-Bolditalic.woff') format('woff');
 	font-weight: bold;
 	font-style: italic;
@@ -27,7 +27,7 @@
 
 @font-face {
 	font-family: 'Karla-Italic';
-	src: url('../../Karla-Italic.woff')  format('truetype');
+	src: url('../../fonts/Karla-Italic.woff')  format('truetype');
 	src: url('../../fonts/Karla-Italic.woff2') format('woff2'), url('../../fonts/Karla-Italic.woff') format('woff');
 	font-weight: normal;
 	font-style: italic;
